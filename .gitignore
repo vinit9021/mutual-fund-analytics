@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Data files
+# Keep this if datasets are large or private.
+# Remove these lines only if your assignment requires pushing CSV files.
+data/raw/*.csv
+data/raw/mfapi_nav/*.csv
+data/processed/*.csv
+
+# Logs
+*.log
