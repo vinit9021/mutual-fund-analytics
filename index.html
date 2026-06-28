@@ -1,0 +1,214 @@
+@'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutual Fund Analytics</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f7fb;
+            color: #1f2937;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f172a, #2563eb);
+            color: white;
+            padding: 50px 80px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            margin-top: 12px;
+            font-size: 18px;
+            color: #dbeafe;
+        }
+
+        .container {
+            max-width: 1150px;
+            margin: 40px auto;
+            padding: 0 25px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 14px;
+            padding: 26px;
+            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 14px 30px rgba(15, 23, 42, 0.13);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            font-size: 22px;
+            color: #0f172a;
+        }
+
+        .card p {
+            color: #4b5563;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 11px 18px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .section-title {
+            margin-top: 55px;
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #0f172a;
+        }
+
+        .chart-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 22px;
+        }
+
+        .chart-card {
+            background: white;
+            padding: 16px;
+            border-radius: 12px;
+            box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+        }
+
+        .chart-card img {
+            width: 100%;
+            border-radius: 8px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .chart-card h3 {
+            font-size: 16px;
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            color: #6b7280;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mutual Fund Analytics Dashboard</h1>
+        <p>Data cleaning, SQLite analytics, EDA visualisations, and mutual fund insights</p>
+    </header>
+
+    <div class="container">
+
+        <div class="grid">
+            <div class="card">
+                <h2>Interactive Dashboard</h2>
+                <p>Open the mutual fund dashboard created inside the dashboard output folder.</p>
+                <a class="btn" href="dashboard/output/mutual_fund_dashboard.html">Open Dashboard</a>
+            </div>
+
+            <div class="card">
+                <h2>EDA Notebook</h2>
+                <p>Jupyter notebook containing exploratory data analysis and 10 key findings.</p>
+                <a class="btn" href="notebooks/EDA_Analysis.ipynb">Open Notebook File</a>
+            </div>
+
+            <div class="card">
+                <h2>Reports</h2>
+                <p>View report files such as data dictionary and data quality summary.</p>
+                <a class="btn" href="reports/">Open Reports</a>
+            </div>
+
+            <div class="card">
+                <h2>SQL Files</h2>
+                <p>View schema design and analytical SQL queries used in the project.</p>
+                <a class="btn" href="sql/">Open SQL Files</a>
+            </div>
+        </div>
+
+        <h2 class="section-title">EDA Chart Gallery</h2>
+
+        <div class="chart-grid">
+
+            <div class="chart-card">
+                <h3>Daily NAV Trend</h3>
+                <img src="reports/charts/01_nav_trend_40_schemes.png" alt="Daily NAV Trend">
+            </div>
+
+            <div class="chart-card">
+                <h3>Normalised NAV Trend</h3>
+                <img src="reports/charts/02_normalised_nav_trend.png" alt="Normalised NAV Trend">
+            </div>
+
+            <div class="chart-card">
+                <h3>AUM Growth by Fund House</h3>
+                <img src="reports/charts/03_aum_growth_by_fund_house.png" alt="AUM Growth">
+            </div>
+
+            <div class="chart-card">
+                <h3>SIP Inflow Trend</h3>
+                <img src="reports/charts/05_sip_inflow_trend.png" alt="SIP Inflow Trend">
+            </div>
+
+            <div class="chart-card">
+                <h3>Category Inflow Heatmap</h3>
+                <img src="reports/charts/07_category_inflow_heatmap.png" alt="Category Inflow Heatmap">
+            </div>
+
+            <div class="chart-card">
+                <h3>Folio Count Growth</h3>
+                <img src="reports/charts/14_folio_count_growth.png" alt="Folio Count Growth">
+            </div>
+
+            <div class="chart-card">
+                <h3>Return Correlation Matrix</h3>
+                <img src="reports/charts/15_nav_return_correlation_matrix.png" alt="Correlation Matrix">
+            </div>
+
+            <div class="chart-card">
+                <h3>Sector Allocation</h3>
+                <img src="reports/charts/16_sector_allocation_donut.png" alt="Sector Allocation">
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        Mutual Fund Analytics Project | Built with Python, Pandas, Plotly, Seaborn, SQLite and HTML
+    </footer>
+
+</body>
+</html>
+'@ | Set-Content -Encoding UTF8 index.html

@@ -7,3 +7,5 @@ sqlalchemy
 requests
 scipy
 jupyter
+kaleido
+ipykernel
