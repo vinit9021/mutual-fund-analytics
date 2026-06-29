@@ -1,0 +1,7 @@
+<svg width="420" height="120" viewBox="0 0 420 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="420" height="120" rx="22" fill="#0B5FFF"/>
+  <circle cx="60" cy="60" r="28" fill="#FFFFFF"/>
+  <path d="M45 65 L55 75 L78 45" stroke="#0B5FFF" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="110" y="68" font-family="Segoe UI, Arial" font-size="36" fill="#FFFFFF" font-weight="700">Bluestock</text>
+  <text x="112" y="93" font-family="Segoe UI, Arial" font-size="15" fill="#DBEAFE">Mutual Fund Analytics</text>
+</svg>

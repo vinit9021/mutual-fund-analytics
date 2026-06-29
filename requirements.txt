@@ -8,4 +8,4 @@ requests
 scipy
 jupyter
 kaleido
-ipykernel
+ipykernelpymupdf
